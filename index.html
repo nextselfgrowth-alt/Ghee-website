@@ -27,80 +27,27 @@
 <meta name="twitter:title" content="Ghee India | The Taste of Tradition">
 <meta name="twitter:description" content="Thoughtfully sourced and carefully packed desi ghee for everyday Indian kitchens.">
 
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYPS07MXXC"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
+window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-DYPS07MXXC');
+gtag('js',new Date());
+gtag('config','G-DYPS07MXXC');
 </script>
-<!-- End Google Analytics -->
 
 <title>Ghee India | Premium Desi Ghee for Everyday Indian Kitchens</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Ghee India",
-  "url":"https://ghee-website-97uxbo05v-ghee2.vercel.app/",
-  "telephone":"+919582853220"
-}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"Ghee India",
-  "url":"https://ghee-website-97uxbo05v-ghee2.vercel.app/"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"ItemList",
-  "name":"Ghee India Products",
-  "itemListElement":[
-    {
-      "@type":"Product",
-      "position":1,
-      "name":"Desi Ghee 500g",
-      "description":"Classic everyday desi ghee for cooking, tadka and serving.",
-      "brand":{
-        "@type":"Brand",
-        "name":"Ghee India"
-      },
-      "offers":{
-        "@type":"Offer",
-        "price":"449",
-        "priceCurrency":"INR"
-      }
-    },
-    {
-      "@type":"Product",
-      "position":2,
-      "name":"Premium Ghee 1kg",
-      "description":"A larger everyday jar of ghee for homes that use ghee regularly.",
-      "brand":{
-        "@type":"Brand",
-        "name":"Ghee India"
-      },
-      "offers":{
-        "@type":"Offer",
-        "price":"899",
-        "priceCurrency":"INR"
-      }
-    }
-  ]
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Ghee India",
+ "url":"https://ghee-website-97uxbo05v-ghee2.vercel.app/",
+ "telephone":"+919582853220"
 }
 </script>
 
@@ -120,15 +67,9 @@ gtag('config', 'G-DYPS07MXXC');
 --shadow:0 25px 70px rgba(30,45,34,.15)
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
-html{
-scroll-behavior:smooth
-}
+html{scroll-behavior:smooth}
 
 body{
 font-family:"DM Sans",sans-serif;
@@ -137,10 +78,7 @@ color:var(--text);
 overflow-x:hidden
 }
 
-a{
-text-decoration:none;
-color:inherit
-}
+a{text-decoration:none;color:inherit}
 
 .navbar{
 position:fixed;
@@ -165,9 +103,7 @@ letter-spacing:4px;
 color:var(--green)
 }
 
-.logo span{
-color:var(--gold)
-}
+.logo span{color:var(--gold)}
 
 .nav-links{
 display:flex;
@@ -185,26 +121,56 @@ background:var(--green);
 color:white!important
 }
 
+/* HERO */
+
 .hero{
 min-height:100vh;
-padding:145px 7% 80px;
+padding:145px 7% 70px;
 display:grid;
 grid-template-columns:1fr 1fr;
 align-items:center;
-gap:60px
+gap:45px;
+position:relative;
+overflow:hidden
+}
+
+.hero:before{
+content:"";
+position:absolute;
+width:650px;
+height:650px;
+right:-180px;
+top:100px;
+background:radial-gradient(circle,rgba(201,149,50,.22),transparent 65%);
+pointer-events:none
+}
+
+.hero-copy{
+position:relative;
+z-index:2
 }
 
 .eyebrow{
-display:inline-block;
+display:inline-flex;
+align-items:center;
+gap:8px;
 padding:9px 15px;
 border:1px solid rgba(201,149,50,.4);
 border-radius:30px;
-background:rgba(255,250,240,.7);
+background:rgba(255,250,240,.8);
 color:var(--brown);
 font-size:11px;
 font-weight:800;
 letter-spacing:1.5px;
 text-transform:uppercase
+}
+
+.live-dot{
+width:7px;
+height:7px;
+border-radius:50%;
+background:var(--gold);
+box-shadow:0 0 0 5px rgba(201,149,50,.12)
 }
 
 h1{
@@ -248,6 +214,10 @@ transition:.3s;
 cursor:pointer
 }
 
+.btn:hover{
+transform:translateY(-3px)
+}
+
 .btn-primary{
 color:#fff;
 background:var(--green);
@@ -256,20 +226,17 @@ box-shadow:0 15px 35px rgba(23,59,42,.2)
 
 .btn-outline{
 color:var(--green);
-background:rgba(255,255,255,.45);
+background:rgba(255,255,255,.55);
 border:1px solid rgba(23,59,42,.2)
 }
 
-.btn:hover{
-transform:translateY(-2px)
+.hero-note{
+margin-top:17px;
+font-size:11px;
+color:var(--muted)
 }
 
-.wa-icon{
-width:18px;
-height:18px;
-display:block;
-fill:currentColor
-}
+/* HERO PRODUCT */
 
 .product-stage{
 min-height:600px;
@@ -277,6 +244,32 @@ display:flex;
 align-items:center;
 justify-content:center;
 position:relative
+}
+
+.product-glow{
+position:absolute;
+width:420px;
+height:420px;
+border-radius:50%;
+background:radial-gradient(circle,rgba(241,212,122,.55),rgba(201,149,50,.12),transparent 70%);
+filter:blur(4px)
+}
+
+.product-badge{
+position:absolute;
+top:80px;
+right:5%;
+z-index:10;
+padding:12px 16px;
+background:rgba(255,250,240,.9);
+border:1px solid rgba(201,149,50,.35);
+border-radius:18px;
+box-shadow:0 15px 35px rgba(30,45,34,.1);
+font-size:10px;
+font-weight:800;
+color:var(--green);
+text-transform:uppercase;
+letter-spacing:1px
 }
 
 .jar{
@@ -295,7 +288,14 @@ box-shadow:
 inset 18px 0 25px rgba(255,255,255,.32),
 inset -18px 0 30px rgba(98,59,12,.2),
 0 35px 70px rgba(55,45,24,.25);
-position:relative
+position:relative;
+z-index:3;
+animation:floatJar 4s ease-in-out infinite
+}
+
+@keyframes floatJar{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
 }
 
 .jar-label{
@@ -397,6 +397,8 @@ line-height:1.8;
 margin-top:16px
 }
 
+/* TRUST */
+
 .trust-strip{
 margin:0 6%;
 padding:22px;
@@ -428,6 +430,8 @@ font-size:13px
 color:var(--muted);
 font-size:11px
 }
+
+/* PROCESS */
 
 .process-grid{
 display:grid;
@@ -464,6 +468,8 @@ color:var(--muted);
 font-size:13px;
 line-height:1.7
 }
+
+/* PRODUCTS */
 
 .products-grid{
 display:grid;
@@ -518,7 +524,7 @@ font-size:28px
 }
 
 .product-info p{
-margin:9px 0 16px;
+margin:9px 0 14px;
 color:var(--muted);
 font-size:13px;
 line-height:1.65
@@ -528,7 +534,7 @@ line-height:1.65
 color:var(--green);
 font-size:25px;
 font-weight:900;
-margin-bottom:16px
+margin-bottom:12px
 }
 
 .price span{
@@ -537,15 +543,84 @@ font-size:12px;
 font-weight:500
 }
 
-.product-actions{
+.payment-title{
+font-size:10px;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:1px;
+color:var(--brown);
+margin-bottom:8px
+}
+
+.payment-options{
 display:flex;
 flex-wrap:wrap;
-gap:9px
+gap:7px;
+margin-bottom:9px
+}
+
+.pay-option{
+display:inline-flex;
+align-items:center;
+gap:6px;
+padding:9px 10px;
+border-radius:12px;
+background:#fff;
+border:1px solid rgba(23,59,42,.1);
+font-size:10px;
+font-weight:800;
+color:var(--green);
+cursor:pointer;
+transition:.25s
+}
+
+.pay-option:hover{
+transform:translateY(-2px);
+box-shadow:0 7px 18px rgba(30,45,34,.1)
+}
+
+.pay-logo{
+width:20px;
+height:20px;
+border-radius:6px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:9px;
+font-weight:900
+}
+
+.gpay-logo{
+background:#fff;
+color:#4285f4;
+border:1px solid #ddd
+}
+
+.phonepe-logo{
+background:#5f259f;
+color:#fff;
+border-radius:50%
+}
+
+.paytm-logo{
+background:#00baf2;
+color:#fff
+}
+
+.upi-logo{
+background:#673ab7;
+color:#fff
+}
+
+.payment-row{
+display:flex;
+flex-wrap:wrap;
+gap:8px
 }
 
 .payment-btn{
-font-size:11px;
-padding:12px 14px
+font-size:10px;
+padding:11px 13px
 }
 
 .booking-btn{
@@ -559,11 +634,13 @@ color:#fff
 }
 
 .payment-note{
-margin-top:11px;
-font-size:10px!important;
+font-size:9px!important;
 color:var(--muted)!important;
-line-height:1.5!important
+line-height:1.5!important;
+margin-top:8px!important
 }
+
+/* STORY */
 
 .story{
 display:grid;
@@ -604,6 +681,8 @@ color:var(--green);
 line-height:1.5
 }
 
+/* CTA */
+
 .cta{
 margin:30px 6% 100px;
 padding:70px 25px;
@@ -614,9 +693,7 @@ text-align:center;
 box-shadow:var(--shadow)
 }
 
-.cta h2{
-color:white
-}
+.cta h2{color:white}
 
 .cta p{
 max-width:600px;
@@ -628,14 +705,18 @@ line-height:1.7
 .cta-actions{
 display:flex;
 justify-content:center;
-align-items:center;
 gap:12px;
 flex-wrap:wrap
 }
 
-.upi-main-btn{
+.upi-main{
 background:#fff;
-color:#173b2a
+color:var(--green)
+}
+
+.whatsapp-main{
+background:#25D366;
+color:#fff
 }
 
 .upi-info{
@@ -643,6 +724,8 @@ margin-top:15px;
 font-size:11px;
 color:rgba(255,255,255,.7)
 }
+
+/* FAQ */
 
 .faq{
 max-width:850px;
@@ -683,9 +766,11 @@ transition:.35s
 }
 
 .faq-item.active .faq-answer{
-max-height:200px;
+max-height:220px;
 padding-bottom:20px
 }
+
+/* FOOTER */
 
 footer{
 padding:50px 7% 30px;
@@ -728,6 +813,8 @@ color:var(--muted);
 font-size:11px
 }
 
+/* FLOATING */
+
 .floating-actions{
 position:fixed;
 right:20px;
@@ -746,29 +833,29 @@ display:flex;
 align-items:center;
 justify-content:center;
 color:white;
-font-size:24px;
-box-shadow:0 12px 30px rgba(0,0,0,.22)
+font-size:23px;
+box-shadow:0 12px 30px rgba(0,0,0,.22);
+transition:.25s
 }
 
-.float-btn svg{
-width:27px;
-height:27px;
-fill:currentColor
+.float-btn:hover{
+transform:scale(1.08)
 }
 
-.call-btn{
-background:var(--green)
+.call-btn{background:var(--green)}
+.wa-btn{background:#25D366}
+
+.wa-svg{
+width:28px;
+height:28px;
+fill:white
 }
 
-.wa-btn{
-background:#25D366
-}
+/* MOBILE */
 
 @media(max-width:900px){
 
-.nav-links{
-display:none
-}
+.nav-links{display:none}
 
 .hero{
 grid-template-columns:1fr;
@@ -782,6 +869,15 @@ margin-right:auto
 
 .hero-actions{
 justify-content:center
+}
+
+.product-stage{
+min-height:500px
+}
+
+.product-badge{
+right:8%;
+top:30px
 }
 
 .trust-strip{
@@ -817,8 +913,7 @@ font-size:25px
 }
 
 .hero{
-padding-left:5%;
-padding-right:5%
+padding:130px 5% 60px
 }
 
 h1{
@@ -829,6 +924,20 @@ font-size:52px
 font-size:15px
 }
 
+.product-stage{
+min-height:470px
+}
+
+.jar{
+transform:scale(.8)
+}
+
+.product-badge{
+top:15px;
+right:4%;
+font-size:8px
+}
+
 section{
 padding:75px 5%
 }
@@ -836,14 +945,6 @@ padding:75px 5%
 .trust-strip{
 margin:0 5%;
 grid-template-columns:repeat(2,1fr)
-}
-
-.product-stage{
-min-height:500px
-}
-
-.jar{
-transform:scale(.8)
 }
 
 .process-grid{
@@ -856,7 +957,8 @@ text-align:center;
 justify-items:center
 }
 
-.product-actions{
+.payment-options,
+.payment-row{
 justify-content:center
 }
 
@@ -877,8 +979,7 @@ bottom:14px
 
 .float-btn{
 width:53px;
-height:53px;
-font-size:21px
+height:53px
 }
 
 }
@@ -893,14 +994,12 @@ font-size:21px
 <a href="#home" class="logo">GHEE<span>.</span></a>
 
 <div class="nav-links">
-
 <a href="#home">Home</a>
 <a href="#story">Our Story</a>
 <a href="#process">Process</a>
 <a href="#products">Products</a>
 <a href="#faq">FAQ</a>
-<a href="#contact" class="nav-btn">Enquire Now</a>
-
+<a href="#contact" class="nav-btn">Order Now</a>
 </div>
 
 </nav>
@@ -909,10 +1008,11 @@ font-size:21px
 
 <section class="hero">
 
-<div>
+<div class="hero-copy">
 
 <div class="eyebrow">
-Thoughtfully sourced • Carefully packed
+<span class="live-dot"></span>
+Made for Indian kitchens
 </div>
 
 <h1>
@@ -921,9 +1021,9 @@ The taste of<br>
 </h1>
 
 <p class="hero-text">
-GHEE brings the warmth of traditional Indian kitchens into a clean,
-modern experience — thoughtfully sourced, carefully packed and made
-for everyday moments.
+GHEE brings the warmth of traditional Indian kitchens into a
+clean, modern experience — thoughtfully sourced, carefully packed
+and made for everyday moments.
 </p>
 
 <div class="hero-actions">
@@ -937,20 +1037,25 @@ href="https://wa.me/919582853220?text=Hi%20GHEE%2C%20I%20want%20to%20know%20more
 target="_blank"
 rel="noopener noreferrer"
 class="btn btn-outline">
-
-<svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
-<path d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.56 0 .26 5.3.26 11.82c0 2.08.54 4.11 1.56 5.9L.16 24l6.45-1.69a11.8 11.8 0 0 0 5.47 1.39h.01c6.51 0 11.81-5.3 11.81-11.82 0-3.16-1.23-6.13-3.38-8.4ZM12.09 21.7h-.01a9.84 9.84 0 0 1-5.02-1.37l-.36-.21-3.83 1 1.02-3.73-.23-.38a9.86 9.86 0 0 1-1.51-5.19C2.15 6.39 6.6 1.94 12.09 1.94c2.66 0 5.16 1.04 7.04 2.92a9.89 9.89 0 0 1 2.91 7.03c0 5.49-4.46 9.94-9.95 9.94Zm5.45-7.45c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.51-1.78-1.69-2.08-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.24-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
-</svg>
-
 WhatsApp Us
-
 </a>
 
+</div>
+
+<div class="hero-note">
+✦ Easy ordering &nbsp; • &nbsp; ₹50 booking option &nbsp; • &nbsp; Faridabad delivery
 </div>
 
 </div>
 
 <div class="product-stage">
+
+<div class="product-glow"></div>
+
+<div class="product-badge">
+Traditional taste<br>
+Modern experience
+</div>
 
 <div class="jar">
 
@@ -1016,9 +1121,7 @@ Crafted for everyday kitchens
 
 <div class="section-head">
 
-<div class="section-tag">
-Inside GHEE
-</div>
+<div class="section-tag">Inside GHEE</div>
 
 <h2>
 From source<br>
@@ -1039,9 +1142,7 @@ taste to your everyday meals.
 
 <div class="section-head">
 
-<div class="section-tag">
-Our Process
-</div>
+<div class="section-tag">Our Process</div>
 
 <h2>
 Simple. Careful.<br>
@@ -1060,33 +1161,25 @@ what happens before your jar reaches you.
 <div class="process-card">
 <div class="number">01</div>
 <h3>Source</h3>
-<p>
-We work with selected suppliers to source the product we offer.
-</p>
+<p>We work with selected suppliers to source the product we offer.</p>
 </div>
 
 <div class="process-card">
 <div class="number">02</div>
 <h3>Check</h3>
-<p>
-Product and packaging are checked before being prepared for orders.
-</p>
+<p>Product and packaging are checked before being prepared for orders.</p>
 </div>
 
 <div class="process-card">
 <div class="number">03</div>
 <h3>Pack</h3>
-<p>
-Ghee is packed carefully in a clean, secure presentation.
-</p>
+<p>Ghee is packed carefully in a clean, secure presentation.</p>
 </div>
 
 <div class="process-card">
 <div class="number">04</div>
 <h3>Deliver</h3>
-<p>
-Your order is prepared for doorstep delivery with care.
-</p>
+<p>Your order is prepared for doorstep delivery with care.</p>
 </div>
 
 </div>
@@ -1097,9 +1190,7 @@ Your order is prepared for doorstep delivery with care.
 
 <div class="section-head">
 
-<div class="section-tag">
-Our Collection
-</div>
+<div class="section-tag">Our Collection</div>
 
 <h2>
 Choose your<br>
@@ -1114,7 +1205,7 @@ Start with our simple range and find the quantity that fits your kitchen.
 
 <div class="products-grid">
 
-<!-- 500g PRODUCT -->
+<!-- 500G -->
 
 <div class="product-card">
 
@@ -1133,37 +1224,50 @@ tadka and serving.
 ₹449 <span>/ 500g</span>
 </div>
 
-<div class="product-actions">
+<div class="payment-title">Choose payment</div>
+
+<div class="payment-options">
+
+<a class="pay-option"
+href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=50&cu=INR&tn=Ghee%20India%20500g%20Booking">
+<span class="pay-logo gpay-logo">G</span>
+₹50 Booking
+</a>
+
+<a class="pay-option"
+href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=449&cu=INR&tn=Ghee%20India%20500g%20Full%20Payment">
+<span class="pay-logo upi-logo">UPI</span>
+₹449 Full
+</a>
+
+</div>
+
+<div class="payment-row">
 
 <a
 class="btn payment-btn booking-btn"
-href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=50&cu=INR&tn=Ghee%20India%20500g%20Booking"
-aria-label="Pay 50 rupees booking amount for 500 gram Desi Ghee">
-
+href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=50&cu=INR&tn=Ghee%20India%20500g%20Booking">
 ₹50 Booking
-
 </a>
 
 <a
 class="btn payment-btn full-btn"
-href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=449&cu=INR&tn=Ghee%20India%20500g%20Full%20Payment"
-aria-label="Pay full 449 rupees for 500 gram Desi Ghee">
-
+href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=449&cu=INR&tn=Ghee%20India%20500g%20Full%20Payment">
 Pay Full ₹449
-
 </a>
 
 </div>
 
 <p class="payment-note">
-After payment, send the screenshot on WhatsApp to confirm your order.
+Payment opens through the UPI app available on your device.
+After payment, send the screenshot on WhatsApp.
 </p>
 
 </div>
 
 </div>
 
-<!-- 1KG PRODUCT -->
+<!-- 1KG -->
 
 <div class="product-card">
 
@@ -1181,30 +1285,43 @@ A larger everyday jar for homes that use ghee regularly.
 ₹899 <span>/ 1kg</span>
 </div>
 
-<div class="product-actions">
+<div class="payment-title">Choose payment</div>
+
+<div class="payment-options">
+
+<a class="pay-option"
+href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=50&cu=INR&tn=Ghee%20India%201kg%20Booking">
+<span class="pay-logo phonepe-logo">पे</span>
+₹50 Booking
+</a>
+
+<a class="pay-option"
+href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=899&cu=INR&tn=Ghee%20India%201kg%20Full%20Payment">
+<span class="pay-logo paytm-logo">P</span>
+₹899 Full
+</a>
+
+</div>
+
+<div class="payment-row">
 
 <a
 class="btn payment-btn booking-btn"
-href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=50&cu=INR&tn=Ghee%20India%201kg%20Booking"
-aria-label="Pay 50 rupees booking amount for 1 kilogram Premium Ghee">
-
+href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=50&cu=INR&tn=Ghee%20India%201kg%20Booking">
 ₹50 Booking
-
 </a>
 
 <a
 class="btn payment-btn full-btn"
-href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=899&cu=INR&tn=Ghee%20India%201kg%20Full%20Payment"
-aria-label="Pay full 899 rupees for 1 kilogram Premium Ghee">
-
+href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=899&cu=INR&tn=Ghee%20India%201kg%20Full%20Payment">
 Pay Full ₹899
-
 </a>
 
 </div>
 
 <p class="payment-note">
-After payment, send the screenshot on WhatsApp to confirm your order.
+Payment opens through the UPI app available on your device.
+After payment, send the screenshot on WhatsApp.
 </p>
 
 </div>
@@ -1225,9 +1342,7 @@ After payment, send the screenshot on WhatsApp to confirm your order.
 
 <div class="story-copy">
 
-<div class="section-tag">
-Our Philosophy
-</div>
+<div class="section-tag">Our Philosophy</div>
 
 <h2>
 Old soul.<br>
@@ -1257,38 +1372,27 @@ everything is designed to stay easy.
 
 <div class="cta" id="contact">
 
-<h2>
-Want to try GHEE?
-</h2>
+<h2>Ready to try GHEE?</h2>
 
 <p>
-Choose your payment option below or message us directly
-for product details, availability and delivery information.
+Book your jar with a ₹50 booking amount or make the full payment.
+After payment, simply send your screenshot on WhatsApp.
 </p>
 
 <div class="cta-actions">
 
 <a
 href="upi://pay?pa=9582853220%40ptyes&pn=Sahil&am=50&cu=INR&tn=Ghee%20India%20Booking"
-class="btn upi-main-btn">
-
-💳 Pay ₹50 Booking
-
+class="btn upi-main">
+₹50 Booking via UPI
 </a>
 
 <a
 href="https://wa.me/919582853220?text=Hi%20GHEE%2C%20I%20have%20made%20the%20payment%20and%20want%20to%20confirm%20my%20order."
 target="_blank"
 rel="noopener noreferrer"
-class="btn"
-style="background:#25D366;color:#fff;">
-
-<svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
-<path d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.56 0 .26 5.3.26 11.82c0 2.08.54 4.11 1.56 5.9L.16 24l6.45-1.69a11.8 11.8 0 0 0 5.47 1.39h.01c6.51 0 11.81-5.3 11.81-11.82 0-3.16-1.23-6.13-3.38-8.4ZM12.09 21.7h-.01a9.84 9.84 0 0 1-5.02-1.37l-.36-.21-3.83 1 1.02-3.73-.23-.38a9.86 9.86 0 0 1-1.51-5.19C2.15 6.39 6.6 1.94 12.09 1.94c2.66 0 5.16 1.04 7.04 2.92a9.89 9.89 0 0 1 2.91 7.03c0 5.49-4.46 9.94-9.95 9.94Zm5.45-7.45c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.51-1.78-1.69-2.08-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.24-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
-</svg>
-
-Send Payment Screenshot
-
+class="btn whatsapp-main">
+WhatsApp Payment Screenshot
 </a>
 
 </div>
@@ -1303,17 +1407,11 @@ UPI: 9582853220@ptyes • Payment recipient: Sahil
 
 <div class="section-head">
 
-<div class="section-tag">
-Questions
-</div>
+<div class="section-tag">Questions</div>
 
-<h2>
-Frequently asked.
-</h2>
+<h2>Frequently asked.</h2>
 
-<p>
-A few simple answers before you order.
-</p>
+<p>A few simple answers before you order.</p>
 
 </div>
 
@@ -1351,14 +1449,13 @@ payment screenshot on WhatsApp with your order details.
 <div class="faq-item">
 
 <button class="faq-question">
-Can I pay a booking amount?
+Can I pay only the booking amount?
 <span class="faq-icon">+</span>
 </button>
 
 <div class="faq-answer">
-Yes. You can book your order by paying ₹50 through UPI.
-The UPI payment opens directly from the booking button.
-After payment, please send the screenshot on WhatsApp.
+Yes. You can book your order with a ₹50 booking amount.
+The amount is automatically added to the UPI payment request.
 </div>
 
 </div>
@@ -1371,9 +1468,9 @@ Can I make full payment?
 </button>
 
 <div class="faq-answer">
-Yes. Full payment options are available for both products.
-The 500g Desi Ghee full price is ₹449 and the 1kg Premium
-Ghee full price is ₹899.
+Yes. Full payment options are available.
+The 500g Desi Ghee price is ₹449 and the 1kg Premium
+Ghee price is ₹899.
 </div>
 
 </div>
@@ -1451,7 +1548,7 @@ class="float-btn wa-btn"
 title="WhatsApp GHEE"
 aria-label="WhatsApp GHEE">
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
+<svg class="wa-svg" viewBox="0 0 24 24">
 <path d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.56 0 .26 5.3.26 11.82c0 2.08.54 4.11 1.56 5.9L.16 24l6.45-1.69a11.8 11.8 0 0 0 5.47 1.39h.01c6.51 0 11.81-5.3 11.81-11.82 0-3.16-1.23-6.13-3.38-8.4ZM12.09 21.7h-.01a9.84 9.84 0 0 1-5.02-1.37l-.36-.21-3.83 1 1.02-3.73-.23-.38a9.86 9.86 0 0 1-1.51-5.19C2.15 6.39 6.6 1.94 12.09 1.94c2.66 0 5.16 1.04 7.04 2.92a9.89 9.89 0 0 1 2.91 7.03c0 5.49-4.46 9.94-9.95 9.94Zm5.45-7.45c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.51-1.78-1.69-2.08-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.24-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
 </svg>
 
@@ -1461,20 +1558,18 @@ aria-label="WhatsApp GHEE">
 
 <script>
 
-const faqItems = document.querySelectorAll(".faq-item");
+const faqItems=document.querySelectorAll(".faq-item");
 
-faqItems.forEach(item => {
+faqItems.forEach(item=>{
 
-const question = item.querySelector(".faq-question");
+const question=item.querySelector(".faq-question");
 
-question.addEventListener("click", () => {
+question.addEventListener("click",()=>{
 
-faqItems.forEach(other => {
-
-if(other !== item){
+faqItems.forEach(other=>{
+if(other!==item){
 other.classList.remove("active");
 }
-
 });
 
 item.classList.toggle("active");
@@ -1483,11 +1578,11 @@ item.classList.toggle("active");
 
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
 
-link.addEventListener("click", function(e){
+link.addEventListener("click",function(e){
 
-const target = document.querySelector(this.getAttribute("href"));
+const target=document.querySelector(this.getAttribute("href"));
 
 if(target){
 
