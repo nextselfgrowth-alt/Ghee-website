@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta name="google-site-verification" content="qK-TVN0qgoF1kwkKHH-4OWmZ6j9KTSci30yDDmglN4c">
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Ghee India — The Taste of Tradition</title>
-
-<meta name="description" content="Thoughtfully sourced and carefully packed ghee. Order Desi Ghee and Premium Ghee online.">
-
+<meta name="description" content="Thoughtfully sourced and carefully packed ghee. Order Desi Ghee and Premium Ghee online with delivery across India.">
 <link rel="canonical" href="https://ghee-website-azure.vercel.app/">
-
 <meta property="og:title" content="Ghee India — The Taste of Tradition">
 <meta property="og:description" content="Thoughtfully sourced • Carefully packed">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ghee-website-azure.vercel.app/">
-
+<meta name="theme-color" content="#244b31">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYPS07MXXC"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-DYPS07MXXC');
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-DYPS07MXXC');
 </script>
 
 <!-- Meta Pixel Code -->
@@ -40,507 +31,347 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script');
-
-fbq('init', '2356671191406285');
-fbq('track', 'PageView');
+s.parentNode.insertBefore(t,s)}(window,document,'script');
+fbq('init','2356671191406285');fbq('track','PageView');
 </script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2356671191406285&ev=PageView&noscript=1"/>
-</noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2356671191406285&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
 
 <style>
+:root{--green:#244b31;--deep:#183222;--cream:#f8f3e8;--paper:#fffdf8;--sand:#e9dfc7;--line:#e5dbc4;--gold:#c49a45;--gold-d:#9a7026;--ink:#203b28;--muted:#5d695e}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;padding-bottom:env(safe-area-inset-bottom,0)}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.15}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.container{width:min(1120px,92%);margin:auto}
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+/* announcement bar */
+.topbar{background:var(--deep);color:#f3e7c7;font-size:13px;font-weight:600;padding:9px 0;overflow:hidden}
+.track{display:flex;width:max-content;animation:scroll 28s linear infinite}
+.topbar:hover .track{animation-play-state:paused}
+.grp{display:flex;justify-content:space-around;gap:44px;padding-right:44px;min-width:100vw;white-space:nowrap}
+.grp span:after{content:"✦";color:var(--gold);margin-left:44px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* motion */
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -14px}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}100%{box-shadow:0 0 0 18px rgba(37,211,102,0)}}
+@keyframes shine{0%,60%{left:-70%}100%{left:130%}}
+@keyframes glow{0%,100%{box-shadow:0 25px 45px rgba(75,48,10,.25)}50%{box-shadow:0 25px 60px rgba(196,154,69,.55)}}
+.jar{animation:float 4s ease-in-out infinite,glow 4s ease-in-out infinite}
+.hero .media:before,.hero .media:after{content:"";position:absolute;border-radius:50%;background:rgba(196,154,69,.18);animation:float 6s ease-in-out infinite}
+.hero .media:before{width:150px;height:150px;top:-40px;left:-40px}
+.hero .media:after{width:90px;height:90px;bottom:30px;right:24px;animation-delay:-3s}
+.whatsapp{animation:ring 1.8s ease-out infinite}
+.btn-gold,.btn-green{position:relative;overflow:hidden}
+.btn-gold:after,.btn-green:after{content:"";position:absolute;top:0;left:-70%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);animation:shine 3.5s ease-in-out infinite;pointer-events:none}
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+.badge{animation:float 5s ease-in-out infinite}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(248,243,232,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(32,59,40,.1)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;letter-spacing:3px}
+.nav nav{display:flex;align-items:center;gap:22px}
+.nav a{font-weight:600}
+
+.btn{display:inline-block;padding:13px 24px;border-radius:30px;font-weight:700;border:none;cursor:pointer;transition:transform .2s;font:inherit;font-weight:700}
+.btn:hover{transform:translateY(-2px)}
+.btn-green{background:var(--green);color:#fff}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-line{border:2px solid var(--green);color:var(--green);background:transparent}
+
+/* hero */
+.hero{padding:64px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.badge{display:inline-block;padding:7px 14px;border-radius:30px;background:var(--sand);font-size:13px;font-weight:700;margin-bottom:18px}
+.hero h1{font-size:clamp(44px,7vw,78px);margin-bottom:18px}
+.hero h1 em{color:var(--gold-d);font-style:italic}
+.hero p.lead{max-width:520px;font-size:18px;color:var(--muted);margin-bottom:26px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
+.ticks{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:26px;font-weight:600;font-size:14px}
+.ticks span:before{content:"✓";color:var(--gold-d);font-weight:800;margin-right:7px}
+
+/* product image slot: real photo sits on top, CSS jar is the fallback */
+.media{position:relative;display:flex;align-items:flex-end;justify-content:center;background:radial-gradient(circle at 50% 40%,#f3e4bd,var(--sand));border-radius:28px;overflow:hidden}
+.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .media{aspect-ratio:4/5;max-height:520px;margin-left:auto;width:100%}
+.jar{position:relative;width:150px;height:175px;margin-bottom:60px;border-radius:24px 24px 34px 34px;background:linear-gradient(135deg,#fff4a8,#d99b28,#f7d85c);box-shadow:0 25px 45px rgba(75,48,10,.25)}
+.jar:before{content:"";position:absolute;top:-26px;left:8px;width:134px;height:36px;border-radius:12px;background:#d8c49a;box-shadow:0 5px 8px rgba(0,0,0,.15)}
+.jar:after{content:"GHEE";position:absolute;top:62px;left:0;right:0;text-align:center;font-family:'Playfair Display',serif;font-size:27px;font-weight:700;color:var(--green)}
+
+/* trust strip */
+.strip{background:var(--green);color:#fff}
+.strip .container{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:22px 0}
+.strip div{text-align:center;font-weight:600;font-size:15px}
+.strip small{display:block;font-weight:400;opacity:.8;font-size:13px}
+
+.section{padding:76px 0}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:clamp(32px,5vw,42px);margin-bottom:8px}
+.section-title p{color:var(--muted)}
+
+/* products */
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 15px 35px rgba(40,50,35,.06)}
+.card .media{aspect-ratio:4/3;border-radius:0}
+.card .media .jar{transform:scale(.85);margin-bottom:34px}
+.card.big .jar{transform:scale(1.05)}
+.tag{position:absolute;top:14px;left:14px;z-index:2;background:var(--green);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px}
+.card-body{padding:26px 28px 28px}
+.card-top{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}
+.card h3{font-size:28px}
+.size{color:var(--muted);font-weight:600}
+.price{font-size:28px;font-weight:800;color:var(--gold-d)}
+.card p.desc{color:var(--muted);margin:12px 0 16px}
+.features{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.feature{padding:6px 11px;border-radius:20px;background:#f0eadb;font-size:12px;font-weight:600}
+.buy{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.qty{display:flex;align-items:center;border:2px solid var(--line);border-radius:30px;overflow:hidden;background:#fff}
+.qty button{width:40px;height:44px;border:0;background:none;font-size:20px;font-weight:700;color:var(--green);cursor:pointer}
+.qty output{min-width:30px;text-align:center;font-weight:700}
+.buy .btn{flex:1;text-align:center;min-width:170px}
+.total{font-size:13px;color:var(--muted);margin-top:10px}
+
+/* why */
+.why{background:var(--paper);border-block:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.why-item{padding:24px 20px;border-radius:20px;background:var(--cream);border:1px solid var(--line)}
+.why-item .ico{font-size:28px;margin-bottom:10px}
+.why-item h3{font-size:21px;margin-bottom:6px}
+.why-item p{font-size:14.5px;color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{padding:26px 18px;background:var(--paper);border-radius:20px;border:1px solid var(--line);text-align:center}
+.step:before{counter-increment:s;content:"0" counter(s);display:block;font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--gold);margin-bottom:6px}
+.step h3{font-size:21px;margin-bottom:5px}
+.step p{font-size:14px;color:var(--muted)}
+
+/* order */
+.order{background:var(--green);color:#fff;border-radius:30px;padding:56px 30px;text-align:center}
+.order h2{font-size:clamp(32px,5vw,42px);margin-bottom:10px}
+.order>p{opacity:.88;margin-bottom:24px}
+.payment{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:32px}
+.payment-box{background:var(--paper);color:var(--ink);padding:26px;border-radius:20px;text-align:left}
+.payment-box h3{font-size:23px;margin-bottom:8px}
+.payment-box p{color:var(--muted)}
+.upi{background:#f0eadb;padding:12px;border-radius:10px;font-weight:700;margin:12px 0;word-break:break-all}
+.upi-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.copy{background:none;border:2px solid var(--green);color:var(--green);border-radius:30px;padding:10px 18px;font:inherit;font-weight:700;cursor:pointer}
+
+/* faq */
+.faq{max-width:800px;margin:auto}
+details{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:18px 20px;margin-bottom:12px}
+summary{font-weight:700;cursor:pointer}
+details p{margin-top:10px;color:var(--muted)}
+
+footer{background:var(--deep);color:#e9dfc7;padding:46px 0 30px;margin-top:20px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer .logo{color:#fff;margin-bottom:8px}
+footer h4{font-family:'Playfair Display',serif;font-size:18px;color:#fff;margin-bottom:10px}
+footer li{list-style:none;margin-bottom:6px}
+footer a:hover{color:var(--gold)}
+.copyright{border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:18px;font-size:13px;opacity:.8;text-align:center}
+
+.float-buttons{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:10px;z-index:999}
+.float-btn{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.whatsapp{background:#25D366}
+.call{background:var(--green)}
+
+@media(max-width:860px){
+.nav nav a:not(.btn){display:none}
+.hero-grid,.products,.payment,.foot{grid-template-columns:1fr}
+.hero .media{max-height:380px;aspect-ratio:4/3;margin:0}
+.strip .container,.why-grid,.steps{grid-template-columns:repeat(2,1fr)}
+.hero{padding-top:40px}
 }
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'DM Sans',sans-serif;
-background:#f8f3e8;
-color:#203b28;
-line-height:1.6;
-}
-
-h1,h2,h3{
-font-family:'Playfair Display',serif;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-.container{
-width:min(1120px,92%);
-margin:auto;
-}
-
-header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(248,243,232,.94);
-backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(32,59,40,.1);
-}
-
-.nav{
-height:72px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-}
-
-.logo{
-font-family:'Playfair Display',serif;
-font-size:30px;
-font-weight:700;
-letter-spacing:3px;
-}
-
-.nav a{
-font-weight:600;
-margin-left:20px;
-}
-
-.btn{
-display:inline-block;
-padding:13px 22px;
-border-radius:30px;
-font-weight:700;
-border:none;
-cursor:pointer;
-transition:.25s;
-}
-
-.btn:hover{
-transform:translateY(-2px);
-}
-
-.btn-green{
-background:#244b31;
-color:white;
-}
-
-.btn-gold{
-background:#c49a45;
-color:white;
-}
-
-.hero{
-padding:90px 0 70px;
-text-align:center;
-}
-
-.badge{
-display:inline-block;
-padding:7px 14px;
-border-radius:30px;
-background:#e9dfc7;
-font-size:13px;
-font-weight:700;
-margin-bottom:18px;
-}
-
-.hero h1{
-font-size:clamp(45px,8vw,82px);
-line-height:1.05;
-margin-bottom:20px;
-}
-
-.hero h1 span{
-color:#a77c2e;
-}
-
-.hero p{
-max-width:650px;
-margin:0 auto 28px;
-font-size:18px;
-color:#536055;
-}
-
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap;
-}
-
-.jar-area{
-margin:55px auto 0;
-width:210px;
-height:250px;
-position:relative;
-}
-
-.jar{
-position:absolute;
-bottom:0;
-left:25px;
-width:160px;
-height:185px;
-border-radius:25px 25px 35px 35px;
-background:linear-gradient(135deg,#fff4a8,#d99b28,#f7d85c);
-box-shadow:0 25px 45px rgba(75,48,10,.2);
-}
-
-.jar:before{
-content:"";
-position:absolute;
-top:-28px;
-left:8px;
-width:144px;
-height:38px;
-border-radius:12px;
-background:#d8c49a;
-box-shadow:0 5px 8px rgba(0,0,0,.15);
-}
-
-.jar:after{
-content:"GHEE";
-position:absolute;
-top:65px;
-left:35px;
-font-family:'Playfair Display',serif;
-font-size:28px;
-font-weight:700;
-color:#244b31;
-}
-
-.section{
-padding:75px 0;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:40px;
-}
-
-.section-title h2{
-font-size:42px;
-margin-bottom:8px;
-}
-
-.section-title p{
-color:#657064;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
-}
-
-.card{
-background:#fffdf8;
-border:1px solid #e5dbc4;
-border-radius:24px;
-padding:28px;
-box-shadow:0 15px 35px rgba(40,50,35,.06);
-}
-
-.card-top{
-display:flex;
-justify-content:space-between;
-gap:15px;
-align-items:flex-start;
-}
-
-.card h3{
-font-size:28px;
-}
-
-.price{
-font-size:26px;
-font-weight:800;
-color:#9a7026;
-}
-
-.card p{
-color:#626b62;
-margin:12px 0 20px;
-}
-
-.features{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-margin-bottom:20px;
-}
-
-.feature{
-padding:6px 10px;
-border-radius:20px;
-background:#f0eadb;
-font-size:12px;
-font-weight:600;
-}
-
-.process{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-}
-
-.process-box{
-text-align:center;
-padding:25px 15px;
-background:#fffdf8;
-border-radius:20px;
-border:1px solid #e5dbc4;
-}
-
-.process-number{
-font-size:30px;
-font-weight:800;
-color:#b08331;
-margin-bottom:8px;
-}
-
-.process-box h3{
-font-size:21px;
-margin-bottom:5px;
-}
-
-.process-box p{
-font-size:14px;
-color:#657064;
-}
-
-.order{
-background:#244b31;
-color:white;
-border-radius:30px;
-padding:55px 30px;
-text-align:center;
-}
-
-.order h2{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.order p{
-opacity:.88;
-margin-bottom:25px;
-}
-
-.payment{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-margin-top:30px;
-}
-
-.payment-box{
-background:#fffdf8;
-color:#203b28;
-padding:25px;
-border-radius:20px;
-text-align:left;
-}
-
-.payment-box h3{
-font-size:23px;
-margin-bottom:8px;
-}
-
-.upi{
-background:#f0eadb;
-padding:12px;
-border-radius:10px;
-font-weight:700;
-margin:12px 0;
-word-break:break-all;
-}
-
-.faq{
-max-width:800px;
-margin:auto;
-}
-
-details{
-background:#fffdf8;
-border:1px solid #e5dbc4;
-border-radius:15px;
-padding:18px 20px;
-margin-bottom:12px;
-}
-
-summary{
-font-weight:700;
-cursor:pointer;
-}
-
-details p{
-margin-top:10px;
-color:#657064;
-}
-
-footer{
-padding:35px 0;
-text-align:center;
-color:#657064;
-font-size:14px;
-}
-
-.float-buttons{
-position:fixed;
-right:18px;
-bottom:18px;
-display:flex;
-flex-direction:column;
-gap:10px;
-z-index:999;
-}
-
-.float-btn{
-width:54px;
-height:54px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-weight:800;
-box-shadow:0 8px 20px rgba(0,0,0,.2);
-}
-
-.whatsapp{
-background:#25D366;
-}
-
-.call{
-background:#244b31;
-}
-
-@media(max-width:800px){
-
-.nav a:not(.btn){
-display:none;
-}
-
-.products,
-.payment{
-grid-template-columns:1fr;
-}
-
-.process{
-grid-template-columns:repeat(2,1fr);
-}
-
-.hero{
-padding-top:65px;
-}
-
-}
-
 @media(max-width:500px){
-
-.process{
-grid-template-columns:1fr;
+.why-grid,.steps{grid-template-columns:1fr}
+.topbar .container{gap:4px 16px}
+.card-body{padding:22px}
 }
-
-.section-title h2,
-.order h2{
-font-size:34px;
-}
-
-}
-
+/* hero scene */
+.hero{padding:26px 0 56px}
+.scene{margin-bottom:36px;border-radius:28px;overflow:hidden;background:#fbeec8;border:1px solid var(--line);box-shadow:0 18px 40px rgba(40,50,35,.12)}
+.scene svg{display:block;width:100%;height:auto}
+.scene text{font-family:'DM Sans',sans-serif;font-weight:700;font-size:26px;fill:#fff8ea;text-anchor:middle}
+.hero-text{text-align:center;max-width:760px;margin:auto}
+.hero-text .lead{margin:0 auto 26px}
+.hero-text .hero-buttons,.hero-text .ticks{justify-content:center}
+.cowwalk{transform-box:fill-box;transform-origin:center;animation:stroll 12s ease-in-out infinite}
+@keyframes stroll{0%{transform:translateX(110px) scaleX(1)}45%{transform:translateX(0) scaleX(1)}50%{transform:translateX(0) scaleX(-1)}95%{transform:translateX(110px) scaleX(-1)}100%{transform:translateX(110px) scaleX(1)}}
+.bob{animation:bob .7s ease-in-out infinite}
+@keyframes bob{50%{translate:0 -3px}}
+.st{transform-box:fill-box;transform-origin:50% 100%;opacity:.5;animation:act 12s ease-in-out infinite}
+@keyframes act{0%{opacity:1;transform:scale(1.14)}14%{opacity:1;transform:scale(1.14)}18%,100%{opacity:.5;transform:scale(1)}}
+.flow{stroke-dasharray:8 8;animation:flowd 1s linear infinite}
+@keyframes flowd{to{stroke-dashoffset:-16}}
+.tail{transform-box:fill-box;transform-origin:top left;animation:wag 2.4s ease-in-out infinite}
+@keyframes wag{0%,100%{transform:rotate(6deg)}50%{transform:rotate(-12deg)}}
+.sun{animation:float 6s ease-in-out infinite}
+/* chat widget */
+.chat-launch{position:fixed;left:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:999;display:flex;align-items:center;gap:8px;background:var(--green);color:#fff;border:0;border-radius:30px;padding:14px 20px;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.chat-launch .dot{width:9px;height:9px;border-radius:50%;background:#4ade80;animation:ring 1.8s ease-out infinite}
+.chat-panel{position:fixed;left:18px;bottom:calc(84px + env(safe-area-inset-bottom,0px));width:min(370px,calc(100vw - 36px));height:min(540px,calc(100dvh - 140px));background:var(--paper);border-radius:22px;box-shadow:0 20px 50px rgba(0,0,0,.28);display:none;flex-direction:column;overflow:hidden;z-index:1001;border:1px solid var(--line)}
+.chat-panel.open{display:flex;animation:pop .25s ease}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+.chat-head{background:var(--green);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.chat-head strong{font-family:'Playfair Display',serif;font-size:18px;display:block}
+.chat-head small{opacity:.85;font-size:12px}
+.chat-head button{background:none;border:0;color:#fff;font-size:26px;cursor:pointer;line-height:1}
+.msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--cream)}
+.m{max-width:85%;padding:10px 14px;border-radius:16px;font-size:15px;line-height:1.45;white-space:pre-line}
+.m.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.m.me{background:var(--green);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.m.typing{color:var(--muted);font-style:italic}
+.m a.btn{display:block;margin-top:10px;text-align:center;padding:10px 16px;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:10px 12px;border-top:1px solid var(--line);background:var(--paper)}
+.chips button{border:1.5px solid var(--green);background:#fff;color:var(--green);border-radius:20px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.chat-form{display:flex;gap:8px;padding:10px 12px;border-top:1px solid var(--line);background:var(--paper)}
+.chat-form input{flex:1;border:1.5px solid var(--line);border-radius:24px;padding:11px 16px;font:inherit;font-size:15px;min-width:0}
+.chat-form button{background:var(--gold);color:#fff;border:0;border-radius:24px;padding:0 18px;font:inherit;font-weight:700;cursor:pointer}
+@media(max-width:500px){.chat-launch span.t{display:none}.chat-launch{padding:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
 </style>
 
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
-"@type":"Product",
-"name":"Desi Ghee",
-"brand":{
-"@type":"Brand",
-"name":"Ghee India"
-},
-"description":"Thoughtfully sourced and carefully packed Desi Ghee.",
-"offers":{
-"@type":"Offer",
-"priceCurrency":"INR",
-"price":"449",
-"availability":"https://schema.org/InStock",
-"url":"https://ghee-website-azure.vercel.app/"
-}
+"@graph":[
+{"@type":"Product","name":"Desi Ghee 500g","brand":{"@type":"Brand","name":"Ghee India"},"description":"Thoughtfully sourced and carefully packed Desi Ghee, 500g.","offers":{"@type":"Offer","priceCurrency":"INR","price":"449","availability":"https://schema.org/InStock","url":"https://ghee-website-azure.vercel.app/#products"}},
+{"@type":"Product","name":"Premium Ghee 1kg","brand":{"@type":"Brand","name":"Ghee India"},"description":"Thoughtfully sourced and carefully packed Premium Ghee, 1kg.","offers":{"@type":"Offer","priceCurrency":"INR","price":"899","availability":"https://schema.org/InStock","url":"https://ghee-website-azure.vercel.app/#products"}}
+]
 }
 </script>
-
 </head>
 
 <body>
 
+<div class="topbar" aria-label="Announcements">
+<div class="track">
+<div class="grp">
+<span>Fresh stock available</span>
+<span>Pan India delivery</span>
+<span>Order directly on WhatsApp</span>
+<span>500g and 1kg packs</span>
+<span>Quality checked before packing</span>
+<span>Carefully packed</span>
+</div>
+</div>
+</div>
+
 <header>
 <div class="container nav">
-
-<div class="logo">GHEE.</div>
-
+<a class="logo" href="#top">GHEE.</a>
 <nav>
 <a href="#products">Products</a>
-<a href="#process">Process</a>
+<a href="#why">Why Us</a>
+<a href="#how">How to Order</a>
 <a href="#faq">FAQ</a>
-<a class="btn btn-green" href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20order%20ghee.">
-Order
-</a>
+<a class="btn btn-green" href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20order%20ghee.">Order</a>
 </nav>
-
 </div>
 </header>
 
-<main>
+<main id="top">
 
 <section class="hero">
-
 <div class="container">
 
+<div class="scene" aria-label="From cow to ghee: milk, curd, churn, ghee">
+<!-- Replace with your own farm video or photo any time -->
+<svg id="scene" viewBox="0 0 800 300" role="img" aria-label="Animated scene: a cow walks in a field while milk becomes curd, is churned and turns into ghee">
+<rect width="800" height="300" fill="#fbeec8"/>
+<circle class="sun" cx="715" cy="48" r="28" fill="#c49a45"/>
+<ellipse cx="150" cy="248" rx="270" ry="38" fill="#3a7550"/>
+<rect y="245" width="800" height="55" fill="#2f6040"/>
+<path class="flow" d="M300 258 H780" stroke="#fff8ea" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+<g class="cowwalk"><g class="bob"><g transform="translate(6,46) scale(.85)">
+<path class="tail" d="M298 118 C330 125 336 160 328 188" fill="none" stroke="#203b28" stroke-width="6" stroke-linecap="round"/>
+<ellipse cx="328" cy="194" rx="8" ry="13" fill="#203b28"/>
+<g fill="#fff8ea" stroke="#203b28" stroke-width="4">
+<rect x="126" y="170" width="20" height="62" rx="7"/>
+<rect x="160" y="172" width="20" height="60" rx="7"/>
+<rect x="246" y="172" width="20" height="60" rx="7"/>
+<rect x="278" y="170" width="20" height="62" rx="7"/>
+<rect x="108" y="98" width="196" height="92" rx="44"/>
+</g>
+<g fill="#203b28"><rect x="126" y="224" width="20" height="10" rx="4"/><rect x="160" y="224" width="20" height="10" rx="4"/><rect x="246" y="224" width="20" height="10" rx="4"/><rect x="278" y="224" width="20" height="10" rx="4"/></g>
+<g fill="#9a6a3a"><ellipse cx="190" cy="125" rx="26" ry="17"/><ellipse cx="255" cy="152" rx="22" ry="15"/><ellipse cx="150" cy="160" rx="14" ry="10"/></g>
+<path d="M92 92 C84 70 96 62 104 66" fill="none" stroke="#c49a45" stroke-width="7" stroke-linecap="round"/>
+<path d="M128 92 C136 70 124 62 116 66" fill="none" stroke="#c49a45" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="82" cy="104" rx="20" ry="11" fill="#fff8ea" stroke="#203b28" stroke-width="4" transform="rotate(-25 82 104)"/>
+<ellipse cx="140" cy="104" rx="20" ry="11" fill="#fff8ea" stroke="#203b28" stroke-width="4" transform="rotate(25 140 104)"/>
+<rect x="76" y="84" width="68" height="72" rx="30" fill="#fff8ea" stroke="#203b28" stroke-width="4"/>
+<ellipse cx="110" cy="148" rx="30" ry="19" fill="#f1c9a8" stroke="#203b28" stroke-width="4"/>
+<circle cx="101" cy="148" r="3.5" fill="#203b28"/><circle cx="119" cy="148" r="3.5" fill="#203b28"/>
+<circle cx="94" cy="115" r="5" fill="#203b28"/><circle cx="126" cy="115" r="5" fill="#203b28"/>
+<circle cx="95.5" cy="113.5" r="1.6" fill="#fff"/><circle cx="127.5" cy="113.5" r="1.6" fill="#fff"/>
+</g></g></g>
+<g transform="translate(470,0)"><g class="st" style="animation-delay:3.5s">
+<ellipse cy="245" rx="36" ry="7" fill="#1d3d29" opacity=".5"/>
+<path d="M-24 192 L-18 241 H18 L24 192 Z" fill="#fff" stroke="#203b28" stroke-width="3"/>
+<ellipse cy="192" rx="24" ry="7" fill="#fff" stroke="#203b28" stroke-width="3"/>
+<path d="M-24 192 Q0 160 24 192" fill="none" stroke="#203b28" stroke-width="3"/>
+</g><text y="282">Milk</text></g>
+<g transform="translate(565,0)"><g class="st" style="animation-delay:6s">
+<ellipse cy="245" rx="36" ry="7" fill="#1d3d29" opacity=".5"/>
+<path d="M-26 205 Q-34 241 -18 242 H18 Q34 241 26 205 Z" fill="#f3e4bd" stroke="#203b28" stroke-width="3"/>
+<ellipse cy="205" rx="26" ry="7" fill="#fffdf8" stroke="#203b28" stroke-width="3"/>
+</g><text y="282">Curd</text></g>
+<g transform="translate(660,0)"><g class="st" style="animation-delay:8.5s">
+<ellipse cy="245" rx="36" ry="7" fill="#1d3d29" opacity=".5"/>
+<path d="M-26 205 Q-34 241 -18 242 H18 Q34 241 26 205 Z" fill="#d9a066" stroke="#203b28" stroke-width="3"/>
+<ellipse cy="205" rx="26" ry="7" fill="#fffdf8" stroke="#203b28" stroke-width="3"/>
+<g><rect x="-3" y="160" width="6" height="50" rx="3" fill="#8a5a2b"/>
+<animateTransform attributeName="transform" type="rotate" values="-14 0 205;14 0 205;-14 0 205" dur="1.2s" repeatCount="indefinite"/></g>
+</g><text y="282">Churn</text></g>
+<g transform="translate(750,0)"><g class="st" style="animation-delay:11s">
+<ellipse cy="245" rx="36" ry="7" fill="#1d3d29" opacity=".5"/>
+<rect x="-24" y="204" width="48" height="38" rx="8" fill="#f0b82f" stroke="#203b28" stroke-width="3"/>
+<rect x="-27" y="194" width="54" height="13" rx="4" fill="#d8c49a" stroke="#203b28" stroke-width="3"/>
+<text y="229" style="font-size:12px;fill:#244b31">GHEE</text>
+</g><text y="282">Ghee</text></g>
+<circle r="8" cy="258" fill="#fff" stroke="#c49a45" stroke-width="3">
+<animate attributeName="cx" from="300" to="750" dur="12s" repeatCount="indefinite"/>
+<animate attributeName="fill" values="#fff;#fff;#f3e4bd;#d9a066;#f0b82f;#f0b82f" keyTimes="0;.3;.5;.7;.9;1" dur="12s" repeatCount="indefinite"/>
+</circle>
+</svg>
+</div>
+
+<div class="hero-text">
 <div class="badge">Thoughtfully sourced • Carefully packed</div>
-
-<h1>The Taste of <span>Tradition</span></h1>
-
-<p>
-A simple, traditional taste of ghee — thoughtfully sourced,
-carefully packed and delivered with care.
-</p>
-
+<h1>The Taste of <em>Tradition</em></h1>
+<p class="lead">Desi ghee for everyday cooking, parathas, dal and sweets. Pick your pack, order on WhatsApp and get it delivered with care.</p>
 <div class="hero-buttons">
-
-<a class="btn btn-green" href="#products">
-Shop Ghee
-</a>
-
-<a class="btn btn-gold"
-href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20know%20more%20about%20your%20ghee.">
-WhatsApp Us
-</a>
-
+<a class="btn btn-green" href="#products">Shop Ghee</a>
+<a class="btn btn-line" href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20know%20more%20about%20your%20ghee.">WhatsApp Us</a>
 </div>
-
-<div class="jar-area">
-<div class="jar"></div>
+<div class="ticks">
+<span>500g and 1kg packs</span>
+<span>Quality checked before packing</span>
+<span>Simple WhatsApp ordering</span>
+</div>
 </div>
 
 </div>
-
 </section>
 
-<section class="section" id="products">
-
+<div class="strip">
 <div class="container">
+<div>Sourced<small>from trusted suppliers</small></div>
+<div>Checked<small>before every pack</small></div>
+<div>Packed<small>to travel safely</small></div>
+<div>Delivered<small>to your doorstep</small></div>
+</div>
+</div>
 
+<section class="section" id="products">
+<div class="container">
 <div class="section-title">
 <h2>Our Ghee</h2>
 <p>Choose the pack that fits your kitchen.</p>
@@ -548,244 +379,315 @@ WhatsApp Us
 
 <div class="products">
 
-<div class="card">
-
+<article class="card" data-name="Desi Ghee 500g" data-price="449">
+<div class="media">
+<span class="tag">Everyday pack</span>
+<!-- Photo: images/desi-ghee-500g.jpg -->
+<img src="images/desi-ghee-500g.jpg" alt="Desi Ghee 500g" loading="lazy" onerror="this.remove()">
+<div class="jar"></div>
+</div>
+<div class="card-body">
 <div class="card-top">
-
-<div>
-<h3>Desi Ghee</h3>
-<p>500g</p>
-</div>
-
+<div><h3>Desi Ghee</h3><span class="size">500g</span></div>
 <div class="price">₹449</div>
-
 </div>
-
+<p class="desc">A rich everyday ghee for cooking, parathas, dal, sweets and more.</p>
 <div class="features">
 <span class="feature">500g</span>
 <span class="feature">Carefully Packed</span>
 <span class="feature">Fresh Stock</span>
 </div>
-
-<p>
-A rich everyday ghee option for cooking,
-parathas, dal, sweets and more.
-</p>
-
-<a class="btn btn-green"
-href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20order%20500g%20Desi%20Ghee%20for%20₹449.">
-Order on WhatsApp
-</a>
-
+<div class="buy">
+<div class="qty" role="group" aria-label="Quantity">
+<button type="button" data-d="-1" aria-label="Decrease">−</button>
+<output>1</output>
+<button type="button" data-d="1" aria-label="Increase">+</button>
 </div>
+<a class="btn btn-green order-btn" href="#">Order on WhatsApp</a>
+</div>
+<p class="total"></p>
+</div>
+</article>
 
-<div class="card">
-
+<article class="card big" data-name="Premium Ghee 1kg" data-price="899">
+<div class="media">
+<span class="tag">Family pack</span>
+<!-- Photo: images/premium-ghee-1kg.jpg -->
+<img src="images/premium-ghee-1kg.jpg" alt="Premium Ghee 1kg" loading="lazy" onerror="this.remove()">
+<div class="jar"></div>
+</div>
+<div class="card-body">
 <div class="card-top">
-
-<div>
-<h3>Premium Ghee</h3>
-<p>1kg</p>
-</div>
-
+<div><h3>Premium Ghee</h3><span class="size">1kg</span></div>
 <div class="price">₹899</div>
-
 </div>
-
+<p class="desc">A larger premium pack for families who love keeping ghee in their kitchen.</p>
 <div class="features">
 <span class="feature">1kg</span>
 <span class="feature">Premium</span>
 <span class="feature">Carefully Packed</span>
 </div>
-
-<p>
-A larger premium pack for families who
-love keeping ghee in their kitchen.
-</p>
-
-<a class="btn btn-green"
-href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20order%201kg%20Premium%20Ghee%20for%20₹899.">
-Order on WhatsApp
-</a>
+<div class="buy">
+<div class="qty" role="group" aria-label="Quantity">
+<button type="button" data-d="-1" aria-label="Decrease">−</button>
+<output>1</output>
+<button type="button" data-d="1" aria-label="Increase">+</button>
+</div>
+<a class="btn btn-green order-btn" href="#">Order on WhatsApp</a>
+</div>
+<p class="total"></p>
+</div>
+</article>
 
 </div>
-
 </div>
-
-</div>
-
 </section>
 
-<section class="section" id="process">
-
+<section class="section why" id="why">
 <div class="container">
-
 <div class="section-title">
-<h2>Our Process</h2>
+<h2>Why Ghee India</h2>
 <p>Simple, careful and transparent.</p>
 </div>
-
-<div class="process">
-
-<div class="process-box">
-<div class="process-number">01</div>
-<h3>Source</h3>
-<p>Thoughtfully sourced from trusted suppliers.</p>
+<div class="why-grid">
+<div class="why-item"><div class="ico">🌾</div><h3>Thoughtfully sourced</h3><p>We buy from trusted suppliers and keep the range small, so quality stays consistent.</p></div>
+<div class="why-item"><div class="ico">✅</div><h3>Checked first</h3><p>Every batch is checked before it goes into a jar.</p></div>
+<div class="why-item"><div class="ico">📦</div><h3>Packed with care</h3><p>Secure packing so your ghee reaches you in good shape.</p></div>
+<div class="why-item"><div class="ico">💬</div><h3>Talk to a person</h3><p>Order, ask or track on WhatsApp. No forms, no waiting.</p></div>
 </div>
-
-<div class="process-box">
-<div class="process-number">02</div>
-<h3>Check</h3>
-<p>Products are checked before packing.</p>
 </div>
-
-<div class="process-box">
-<div class="process-number">03</div>
-<h3>Pack</h3>
-<p>Carefully packed for delivery.</p>
-</div>
-
-<div class="process-box">
-<div class="process-number">04</div>
-<h3>Deliver</h3>
-<p>Delivered with care to your doorstep.</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-<section class="section">
-
+<section class="section" id="how">
 <div class="container">
+<div class="section-title">
+<h2>How to Order</h2>
+<p>Four easy steps, all on your phone.</p>
+</div>
+<div class="steps">
+<div class="step"><h3>Pick your pack</h3><p>Choose 500g or 1kg and set the quantity.</p></div>
+<div class="step"><h3>Send on WhatsApp</h3><p>Tap order. Your message is already written.</p></div>
+<div class="step"><h3>Confirm and pay</h3><p>Pay ₹50 to book, or pay in full by UPI.</p></div>
+<div class="step"><h3>Get it delivered</h3><p>We pack it carefully and deliver to your door.</p></div>
+</div>
+</div>
+</section>
 
+<section class="section" style="padding-top:20px">
+<div class="container">
 <div class="order">
-
 <h2>Ready to Order?</h2>
-
-<p>
-Book your ghee directly through WhatsApp or make your payment using UPI.
-</p>
-
-<a class="btn btn-gold"
-href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20place%20an%20order.">
-Start Order on WhatsApp
-</a>
+<p>Book your ghee directly through WhatsApp or make your payment using UPI.</p>
+<a class="btn btn-gold" href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20place%20an%20order.">Start Order on WhatsApp</a>
 
 <div class="payment">
-
 <div class="payment-box">
-
 <h3>₹50 Booking</h3>
-
-<p>
-Pay ₹50 to confirm your booking and share your order details with us.
-</p>
-
-<div class="upi">
-UPI: 9582853220@ptyes
+<p>Pay ₹50 to confirm your booking and share your order details with us.</p>
+<div class="upi">UPI: 9582853220@ptyes</div>
+<div class="upi-row">
+<a class="btn btn-green" href="upi://pay?pa=9582853220@ptyes&pn=Sahil&cu=INR&am=50">Pay ₹50</a>
+<button class="copy" type="button" data-copy="9582853220@ptyes">Copy UPI ID</button>
 </div>
-
-<a class="btn btn-green"
-href="upi://pay?pa=9582853220@ptyes&pn=Sahil&cu=INR&am=50">
-Pay ₹50
-</a>
-
 </div>
-
 <div class="payment-box">
-
 <h3>Full Payment</h3>
-
-<p>
-For direct full payment, use the same UPI ID.
-</p>
-
-<div class="upi">
-UPI: 9582853220@ptyes
+<p>For direct full payment, use the same UPI ID.</p>
+<div class="upi">UPI: 9582853220@ptyes</div>
+<div class="upi-row">
+<a class="btn btn-green" href="upi://pay?pa=9582853220@ptyes&pn=Sahil&cu=INR">Pay via UPI</a>
+<button class="copy" type="button" data-copy="9582853220@ptyes">Copy UPI ID</button>
 </div>
-
-<a class="btn btn-green"
-href="upi://pay?pa=9582853220@ptyes&pn=Sahil&cu=INR">
-Pay via UPI
-</a>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
 </section>
 
 <section class="section" id="faq">
-
 <div class="container">
-
-<div class="section-title">
-<h2>FAQ</h2>
-</div>
-
+<div class="section-title"><h2>FAQ</h2></div>
 <div class="faq">
-
-<details>
-<summary>Where do you deliver?</summary>
-<p>We currently focus on Faridabad delivery, with wider India delivery planned.</p>
-</details>
-
-<details>
-<summary>How can I order?</summary>
-<p>You can order directly through WhatsApp using the order buttons on this website.</p>
-</details>
-
-<details>
-<summary>How can I pay?</summary>
-<p>You can use the ₹50 booking option or make full payment through UPI.</p>
-</details>
-
-<details>
-<summary>How do I contact you?</summary>
-<p>You can contact us directly through WhatsApp or phone.</p>
-</details>
-
+<details><summary>Where do you deliver?</summary><p>We deliver across India. Message us on WhatsApp with your city and pincode and we will confirm delivery details.</p></details>
+<details><summary>How can I order?</summary><p>Choose your pack, set the quantity and tap "Order on WhatsApp". Your order message is filled in for you.</p></details>
+<details><summary>How can I pay?</summary><p>You can use the ₹50 booking option or make full payment through UPI.</p></details>
+<details><summary>How should I store the ghee?</summary><p>Keep it in a cool, dry place away from direct sunlight, and use a clean, dry spoon each time.</p></details>
+<details><summary>Which pack should I choose?</summary><p>The 500g Desi Ghee suits everyday use. The 1kg Premium Ghee suits larger families and regular cooking.</p></details>
+<details><summary>How do I contact you?</summary><p>You can contact us directly through WhatsApp or phone on +91 95828 53220.</p></details>
 </div>
-
 </div>
-
 </section>
 
 </main>
 
 <footer>
-
 <div class="container">
-
-<p>© 2026 Ghee India. All rights reserved.</p>
-<p>Thoughtfully sourced • Carefully packed</p>
-
+<div class="foot">
+<div>
+<div class="logo">GHEE.</div>
+<p>The Taste of Tradition.<br>Thoughtfully sourced • Carefully packed</p>
 </div>
-
+<div>
+<h4>Shop</h4>
+<ul>
+<li><a href="#products">Desi Ghee 500g</a></li>
+<li><a href="#products">Premium Ghee 1kg</a></li>
+<li><a href="#how">How to Order</a></li>
+</ul>
+</div>
+<div>
+<h4>Get in touch</h4>
+<ul>
+<li><a href="https://wa.me/919582853220">WhatsApp: +91 95828 53220</a></li>
+<li><a href="tel:+919582853220">Call us</a></li>
+<li>Delivering across India</li>
+</ul>
+</div>
+</div>
+<div class="copyright">© 2026 Ghee India. All rights reserved.</div>
+</div>
 </footer>
 
-<div class="float-buttons">
+<button class="chat-launch" id="chatOpen" type="button" aria-label="Chat with us"><span class="dot"></span>💬 <span class="t">Chat with us</span></button>
 
-<a class="float-btn whatsapp"
-href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20order%20ghee."
-aria-label="WhatsApp">
-WA
-</a>
-
-<a class="float-btn call"
-href="tel:+919582853220"
-aria-label="Call">
-☎
-</a>
-
+<section class="chat-panel" id="chatPanel" role="dialog" aria-label="Chat with Ghee India">
+<div class="chat-head">
+<div><strong>Ghee India</strong><small>Ask us anything about your order</small></div>
+<button id="chatClose" type="button" aria-label="Close chat">×</button>
 </div>
+<div class="msgs" id="msgs" aria-live="polite"></div>
+<div class="chips" id="chips"></div>
+<form class="chat-form" id="chatForm" autocomplete="off">
+<input id="chatInput" type="text" placeholder="Type your question..." aria-label="Type your question">
+<button type="submit">Send</button>
+</form>
+</section>
+
+<div class="float-buttons">
+<a class="float-btn whatsapp" href="https://wa.me/919582853220?text=Hi%20Ghee%20India,%20I%20want%20to%20order%20ghee." aria-label="WhatsApp">WA</a>
+<a class="float-btn call" href="tel:+919582853220" aria-label="Call">☎</a>
+</div>
+
+<script>
+// Chat assistant (answers common questions, hands off to WhatsApp)
+(function(){
+  var WA='919582853220';
+  var panel=document.getElementById('chatPanel'),msgs=document.getElementById('msgs'),
+      chips=document.getElementById('chips'),form=document.getElementById('chatForm'),
+      input=document.getElementById('chatInput'),opened=false;
+  var topics=[
+    {label:'Prices',keys:['price','prices','rate','cost','kitna','how much','कीमत','दाम','रेट','कितना'],
+     a:'Our ghee packs:\n• Desi Ghee 500g: ₹449\n• Premium Ghee 1kg: ₹899'},
+    {label:'Delivery',keys:['deliver','delivery','faridabad','shipping','ship','where','डिलीवरी','कहाँ','कब'],
+     a:'We deliver across India. Share your city and pincode on WhatsApp and we will confirm the details.'},
+    {label:'How to order',keys:['order','buy','book','kaise','how to','ऑर्डर','खरीद'],
+     a:'Choose your pack and quantity, then tap "Order on WhatsApp". Your message is filled in for you. We confirm the details with you there.'},
+    {label:'Payment',keys:['pay','payment','upi','booking','advance','cod','पेमेंट','भुगतान'],
+     a:'You can pay ₹50 to confirm your booking, or pay in full by UPI.\nUPI ID: 9582853220@ptyes'},
+    {label:'Which pack?',keys:['which','pack','size','500','1kg','1 kg','family','कौन'],
+     a:'Desi Ghee 500g suits everyday cooking. Premium Ghee 1kg suits larger families and regular use.'},
+    {label:'Storage',keys:['store','storage','keep','fridge','shelf','रखें','स्टोर'],
+     a:'Keep ghee in a cool, dry place away from direct sunlight, and use a clean, dry spoon each time.'}
+  ];
+  function add(text,who,extra){
+    var d=document.createElement('div');d.className='m '+who;d.textContent=text;
+    if(extra)d.appendChild(extra);
+    msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d;
+  }
+  function waLink(text,label){
+    var a=document.createElement('a');a.className='btn btn-green';a.target='_blank';a.rel='noopener';
+    a.textContent=label||'Chat with a person on WhatsApp';
+    a.href='https://wa.me/'+WA+'?text='+encodeURIComponent(text);return a;
+  }
+  function answer(q){
+    var s=q.toLowerCase();
+    for(var i=0;i<topics.length;i++){
+      for(var j=0;j<topics[i].keys.length;j++){
+        if(s.indexOf(topics[i].keys[j])>-1){return {text:topics[i].a}}
+      }
+    }
+    if(/^(hi|hello|hey|namaste|नमस्ते|हेलो)/.test(s)){return {text:'Hello! Ask about prices, delivery, payment or how to order.'}}
+    return {text:'I am not sure about that one. A person can help you on WhatsApp.',wa:'Hi Ghee India, I have a question: '+q};
+  }
+  function ask(q){
+    add(q,'me');
+    var t=add('Typing...','bot typing');
+    setTimeout(function(){
+      t.remove();
+      var r=answer(q);
+      add(r.text,'bot',r.wa?waLink(r.wa):null);
+    },550);
+  }
+  topics.forEach(function(t){
+    var b=document.createElement('button');b.type='button';b.textContent=t.label;
+    b.addEventListener('click',function(){ask(t.label==='Which pack?'?'Which pack should I choose?':t.label)});
+    chips.appendChild(b);
+  });
+  var h=document.createElement('button');h.type='button';h.textContent='Talk to a person';
+  h.addEventListener('click',function(){
+    add('Talk to a person','me');
+    add('Tap below and we will reply on WhatsApp.','bot',waLink('Hi Ghee India, I want to talk to someone.'));
+  });
+  chips.appendChild(h);
+  function open(){
+    panel.classList.add('open');
+    if(!opened){opened=true;add('Hi! I can help with prices, delivery, payment and orders. Pick a topic or type your question.','bot')}
+    input.focus();
+  }
+  function close(){panel.classList.remove('open')}
+  document.getElementById('chatOpen').addEventListener('click',function(){panel.classList.contains('open')?close():open()});
+  document.getElementById('chatClose').addEventListener('click',close);
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var q=input.value.trim();if(!q)return;
+    input.value='';ask(q.slice(0,300));
+  });
+})();
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){var sc=document.getElementById('scene');if(sc&&sc.pauseAnimations)sc.pauseAnimations()}
+// Marquee: clone the group so the loop is seamless
+(function(){
+  var t=document.querySelector('.track'),g=t.firstElementChild,c=g.cloneNode(true);
+  c.setAttribute('aria-hidden','true');t.appendChild(c);
+})();
+// Scroll reveal
+(function(){
+  document.documentElement.classList.add('js');
+  var els=document.querySelectorAll('.section-title,.card,.why-item,.step,.order,.faq details');
+  els.forEach(function(e){e.classList.add('reveal')});
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(list){
+    list.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+// Quantity stepper + WhatsApp message builder
+document.querySelectorAll('.card').forEach(function(card){
+  var out=card.querySelector('output'),btn=card.querySelector('.order-btn'),tot=card.querySelector('.total');
+  var name=card.dataset.name,price=+card.dataset.price,q=1;
+  function update(){
+    out.textContent=q;
+    var sum=q*price;
+    tot.textContent=q+' × ₹'+price+' = ₹'+sum;
+    var msg='Hi Ghee India, I want to order '+q+' × '+name+' (₹'+sum+').';
+    btn.href='https://wa.me/919582853220?text='+encodeURIComponent(msg);
+  }
+  card.querySelectorAll('.qty button').forEach(function(b){
+    b.addEventListener('click',function(){
+      q=Math.min(20,Math.max(1,q+Number(b.dataset.d)));
+      update();
+    });
+  });
+  update();
+});
+// Copy UPI ID
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.dataset.copy,old=b.textContent;
+    function done(){b.textContent='Copied';setTimeout(function(){b.textContent=old},1500)}
+    if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,done)}else{done()}
+  });
+});
+</script>
 
 </body>
 </html>
