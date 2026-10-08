@@ -16,6 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet">
+
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYPS07MXXC"></script>
 <script>
@@ -247,6 +249,104 @@ footer a:hover{color:var(--gold)}
 .amt-label{display:block;font-weight:700;font-size:14px;margin-top:14px}
 .amt{width:100%;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font:inherit;font-size:20px;font-weight:700;margin:6px 0 4px;color:var(--ink);background:#fff}
 .amt-err{color:#b3261e!important;font-size:13px;min-height:18px;margin:0}
+.scene video{display:block;width:100%;height:auto;max-height:80vh;background:#000}
+
+/* ===== Ghee Gold design v2 ===== */
+:root{--green:#1f4a2f;--deep:#143222;--cream:#fdf1c6;--paper:#fffaeb;--sand:#f5e3a1;--line:#ecd48c;--gold:#d29a26;--gold-d:#9a6a12;--ink:#1f3a28;--muted:#675f45}
+h1,h2,h3,.logo,.chat-head strong,footer h4,.step:before{font-family:'Fraunces','Playfair Display',Georgia,serif}
+body{background:
+ radial-gradient(1000px 600px at 8% -4%,rgba(244,197,66,.55),transparent 60%),
+ radial-gradient(900px 600px at 100% 18%,rgba(255,226,120,.5),transparent 60%),
+ radial-gradient(1000px 700px at 0% 62%,rgba(244,197,66,.30),transparent 60%),
+ radial-gradient(900px 600px at 100% 94%,rgba(244,197,66,.35),transparent 60%),
+ #fdf1c6}
+/* soft glitter layer (few, slow, low opacity) */
+.glitter{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.glitter i{position:absolute;width:var(--s);height:var(--s);background:#e6a928;clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%);opacity:0;animation:twinkle var(--d) ease-in-out infinite;animation-delay:var(--l)}
+.glitter i.dot{clip-path:none;border-radius:50%;background:radial-gradient(circle,#fff3b8,rgba(244,197,66,0) 70%)}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.4) rotate(0)}50%{opacity:.6;transform:scale(1) rotate(25deg)}}
+
+header{background:rgba(253,241,198,.85);border-bottom:1px solid rgba(154,106,18,.22)}
+.logo{color:var(--green)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:22px 0 68px}
+.hero .container{position:relative;z-index:1}
+.hero:before{content:"";position:absolute;inset:0 -30%;background:linear-gradient(105deg,transparent 40%,rgba(255,240,170,.5) 50%,transparent 60%);animation:sheen 11s ease-in-out infinite;pointer-events:none}
+@keyframes sheen{0%,100%{transform:translateX(-35%)}50%{transform:translateX(35%)}}
+.scene{padding:6px;border:0;border-radius:34px;background:linear-gradient(135deg,#fbe38a,#d29a26 45%,#fbe38a);box-shadow:0 22px 50px rgba(154,106,18,.38),0 0 0 7px rgba(255,243,196,.65);margin-bottom:44px}
+.scene video{border-radius:28px}
+.badge{animation:none;background:#fff3c4;border:1px solid rgba(210,154,38,.55);color:var(--gold-d)}
+.hero h1{font-size:clamp(46px,10vw,86px);letter-spacing:-.02em;color:var(--green);line-height:1.04}
+.hero h1 em{background:linear-gradient(120deg,#b27a12,#f2c94c 50%,#a9710f);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
+.hero p.lead,.hero-text .lead{color:var(--muted);font-size:18px}
+.btn-green{background:linear-gradient(135deg,#2a5a3b,#1a3d28);box-shadow:0 8px 18px rgba(31,74,47,.28)}
+.btn-gold{background:linear-gradient(135deg,#e5b23a,#b98a2c);box-shadow:0 8px 18px rgba(154,106,18,.3)}
+.btn-line{border-color:var(--gold-d);color:var(--gold-d);background:rgba(255,250,235,.6)}
+.ticks span:before{color:var(--gold)}
+
+/* trust strip */
+.strip{background:linear-gradient(135deg,#1f4a2f,#143222);box-shadow:inset 0 3px 0 #d29a26,inset 0 -3px 0 #d29a26}
+.strip .container{padding:26px 0}
+.strip div{color:#f9dc7a}
+.strip small{color:#f3ecd0;opacity:.9}
+
+/* sections */
+.section{padding:84px 0}
+.section-title{margin-bottom:46px}
+.section-title h2{color:var(--green)}
+.section-title h2:after{content:"";display:block;width:76px;height:4px;border-radius:4px;margin:14px auto 0;background:linear-gradient(90deg,transparent,#d29a26,transparent)}
+
+/* products */
+#products{background:linear-gradient(180deg,rgba(255,236,160,0),rgba(255,236,160,.6) 14%,rgba(255,236,160,.6) 86%,rgba(255,236,160,0))}
+.card{background:linear-gradient(180deg,#fffdf3,#fff4d0);border:1px solid rgba(210,154,38,.5);border-radius:30px;box-shadow:0 22px 46px rgba(154,106,18,.24)}
+.card .media{background:radial-gradient(circle at 50% 35%,#fff0b0,#f1d070)}
+.tag{background:linear-gradient(135deg,#fbe38a,#e0a82e);color:#3a2706;box-shadow:0 4px 10px rgba(154,106,18,.3)}
+.card h3{color:var(--green)}
+.price{background:linear-gradient(135deg,#fbe38a,#e0a82e);color:#3a2706;padding:6px 16px;border-radius:30px;font-size:24px;box-shadow:0 5px 12px rgba(154,106,18,.25)}
+.feature{background:#fff0b8;border:1px solid rgba(210,154,38,.4);color:#5a420c}
+.qty{border-color:rgba(210,154,38,.55);background:#fffaeb}
+
+/* why */
+.why{background:linear-gradient(180deg,rgba(255,250,235,.75),rgba(255,240,180,.7));border-block:1px solid rgba(210,154,38,.3)}
+.why-item{background:#fffaeb;border:1px solid rgba(210,154,38,.4);border-radius:28px;text-align:center;padding:30px 20px;box-shadow:0 12px 28px rgba(154,106,18,.14)}
+.why-item .ico{width:68px;height:68px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font-size:30px;background:radial-gradient(circle at 35% 30%,#fff3c4,#f2c94c);box-shadow:0 8px 18px rgba(200,144,30,.35)}
+.why-item h3{color:var(--green)}
+
+/* steps */
+.step{background:#fffaeb;border:1px solid rgba(210,154,38,.4);border-radius:28px;box-shadow:0 12px 28px rgba(154,106,18,.12)}
+.step:before{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,#2a5a3b,#143222);color:#f9dc7a;font-size:22px;box-shadow:0 6px 14px rgba(31,74,47,.3)}
+.step h3{color:var(--green)}
+
+/* order */
+.order{background:radial-gradient(600px 280px at 50% 0%,rgba(244,197,66,.38),transparent 70%),linear-gradient(135deg,#25563a,#143222);border:1px solid rgba(244,197,66,.55);box-shadow:0 24px 50px rgba(20,50,34,.35)}
+.order h2{color:#fff3c4}
+.payment-box{background:#fffaeb;border:1px solid rgba(210,154,38,.4)}
+.upi{background:#fff0b8}
+
+/* faq */
+details{background:#fffaeb;border:1px solid rgba(210,154,38,.4);border-radius:18px}
+details[open]{box-shadow:0 10px 24px rgba(154,106,18,.16)}
+
+footer{background:linear-gradient(180deg,#183a28,#0f2619);border-top:4px solid #d29a26}
+.float-btn{width:50px;height:50px}
+
+/* quantity -> jars multiply */
+.products{align-items:start}
+.card .media.has-tiles{display:block;aspect-ratio:auto;padding:14px}
+.tiles{display:grid;gap:8px;margin:0 auto;grid-template-columns:repeat(3,1fr)}
+.card:not(.big) .tiles{width:76%}
+.card.big .tiles{width:100%}
+.card:not(.big) .tiles:not([data-n="1"]){width:92%}
+.tiles[data-n="1"]{grid-template-columns:1fr}
+.tiles[data-n="2"],.tiles[data-n="4"]{grid-template-columns:repeat(2,1fr)}
+.tile{display:block;overflow:hidden;border-radius:18px;box-shadow:0 8px 18px rgba(154,106,18,.3)}
+.tile.new{animation:tilepop .35s ease}
+.tile img{position:static;inset:auto;width:100%;height:auto;aspect-ratio:1008/1194;object-fit:cover}
+.has-tiles .jar{display:none}
+.qbadge{position:absolute;right:18px;bottom:18px;z-index:3;background:linear-gradient(135deg,#1f4a2f,#143222);color:#f9dc7a;font-weight:800;padding:6px 14px;border-radius:30px;box-shadow:0 6px 14px rgba(20,50,34,.35)}
+.qbadge[hidden]{display:none}
+@keyframes tilepop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
 </style>
 
 <script type="application/ld+json">
@@ -294,64 +394,8 @@ footer a:hover{color:var(--gold)}
 <div class="container">
 
 <div class="scene" aria-label="From cow to ghee: milk, curd, churn, ghee">
-<!-- Replace with your own farm video or photo any time -->
-<svg id="scene" viewBox="0 0 800 300" role="img" aria-label="Animated scene: a cow walks in a field while milk becomes curd, is churned and turns into ghee">
-<rect width="800" height="300" fill="#fbeec8"/>
-<circle class="sun" cx="715" cy="48" r="28" fill="#c49a45"/>
-<ellipse cx="150" cy="248" rx="270" ry="38" fill="#3a7550"/>
-<rect y="245" width="800" height="55" fill="#2f6040"/>
-<path class="flow" d="M300 258 H780" stroke="#fff8ea" stroke-width="4" stroke-linecap="round" opacity=".55"/>
-<g class="cowwalk"><g class="bob"><g transform="translate(6,46) scale(.85)">
-<path class="tail" d="M298 118 C330 125 336 160 328 188" fill="none" stroke="#203b28" stroke-width="6" stroke-linecap="round"/>
-<ellipse cx="328" cy="194" rx="8" ry="13" fill="#203b28"/>
-<g fill="#fff8ea" stroke="#203b28" stroke-width="4">
-<rect x="126" y="170" width="20" height="62" rx="7"/>
-<rect x="160" y="172" width="20" height="60" rx="7"/>
-<rect x="246" y="172" width="20" height="60" rx="7"/>
-<rect x="278" y="170" width="20" height="62" rx="7"/>
-<rect x="108" y="98" width="196" height="92" rx="44"/>
-</g>
-<g fill="#203b28"><rect x="126" y="224" width="20" height="10" rx="4"/><rect x="160" y="224" width="20" height="10" rx="4"/><rect x="246" y="224" width="20" height="10" rx="4"/><rect x="278" y="224" width="20" height="10" rx="4"/></g>
-<g fill="#9a6a3a"><ellipse cx="190" cy="125" rx="26" ry="17"/><ellipse cx="255" cy="152" rx="22" ry="15"/><ellipse cx="150" cy="160" rx="14" ry="10"/></g>
-<path d="M92 92 C84 70 96 62 104 66" fill="none" stroke="#c49a45" stroke-width="7" stroke-linecap="round"/>
-<path d="M128 92 C136 70 124 62 116 66" fill="none" stroke="#c49a45" stroke-width="7" stroke-linecap="round"/>
-<ellipse cx="82" cy="104" rx="20" ry="11" fill="#fff8ea" stroke="#203b28" stroke-width="4" transform="rotate(-25 82 104)"/>
-<ellipse cx="140" cy="104" rx="20" ry="11" fill="#fff8ea" stroke="#203b28" stroke-width="4" transform="rotate(25 140 104)"/>
-<rect x="76" y="84" width="68" height="72" rx="30" fill="#fff8ea" stroke="#203b28" stroke-width="4"/>
-<ellipse cx="110" cy="148" rx="30" ry="19" fill="#f1c9a8" stroke="#203b28" stroke-width="4"/>
-<circle cx="101" cy="148" r="3.5" fill="#203b28"/><circle cx="119" cy="148" r="3.5" fill="#203b28"/>
-<circle cx="94" cy="115" r="5" fill="#203b28"/><circle cx="126" cy="115" r="5" fill="#203b28"/>
-<circle cx="95.5" cy="113.5" r="1.6" fill="#fff"/><circle cx="127.5" cy="113.5" r="1.6" fill="#fff"/>
-</g></g></g>
-<g transform="translate(470,0)"><g class="st" style="animation-delay:3.5s">
-<ellipse cy="245" rx="36" ry="7" fill="#1d3d29" opacity=".5"/>
-<path d="M-24 192 L-18 241 H18 L24 192 Z" fill="#fff" stroke="#203b28" stroke-width="3"/>
-<ellipse cy="192" rx="24" ry="7" fill="#fff" stroke="#203b28" stroke-width="3"/>
-<path d="M-24 192 Q0 160 24 192" fill="none" stroke="#203b28" stroke-width="3"/>
-</g><text y="282">Milk</text></g>
-<g transform="translate(565,0)"><g class="st" style="animation-delay:6s">
-<ellipse cy="245" rx="36" ry="7" fill="#1d3d29" opacity=".5"/>
-<path d="M-26 205 Q-34 241 -18 242 H18 Q34 241 26 205 Z" fill="#f3e4bd" stroke="#203b28" stroke-width="3"/>
-<ellipse cy="205" rx="26" ry="7" fill="#fffdf8" stroke="#203b28" stroke-width="3"/>
-</g><text y="282">Curd</text></g>
-<g transform="translate(660,0)"><g class="st" style="animation-delay:8.5s">
-<ellipse cy="245" rx="36" ry="7" fill="#1d3d29" opacity=".5"/>
-<path d="M-26 205 Q-34 241 -18 242 H18 Q34 241 26 205 Z" fill="#d9a066" stroke="#203b28" stroke-width="3"/>
-<ellipse cy="205" rx="26" ry="7" fill="#fffdf8" stroke="#203b28" stroke-width="3"/>
-<g><rect x="-3" y="160" width="6" height="50" rx="3" fill="#8a5a2b"/>
-<animateTransform attributeName="transform" type="rotate" values="-14 0 205;14 0 205;-14 0 205" dur="1.2s" repeatCount="indefinite"/></g>
-</g><text y="282">Churn</text></g>
-<g transform="translate(750,0)"><g class="st" style="animation-delay:11s">
-<ellipse cy="245" rx="36" ry="7" fill="#1d3d29" opacity=".5"/>
-<rect x="-24" y="204" width="48" height="38" rx="8" fill="#f0b82f" stroke="#203b28" stroke-width="3"/>
-<rect x="-27" y="194" width="54" height="13" rx="4" fill="#d8c49a" stroke="#203b28" stroke-width="3"/>
-<text y="229" style="font-size:12px;fill:#244b31">GHEE</text>
-</g><text y="282">Ghee</text></g>
-<circle r="8" cy="258" fill="#fff" stroke="#c49a45" stroke-width="3">
-<animate attributeName="cx" from="300" to="750" dur="12s" repeatCount="indefinite"/>
-<animate attributeName="fill" values="#fff;#fff;#f3e4bd;#d9a066;#f0b82f;#f0b82f" keyTimes="0;.3;.5;.7;.9;1" dur="12s" repeatCount="indefinite"/>
-</circle>
-</svg>
+<!-- Video: demo-compressed.mp4 (same folder as index.html) -->
+<video id="scene" src="demo-compressed.mp4" autoplay muted loop playsinline controls preload="auto" aria-label="Ghee making process video"></video>
 </div>
 
 <div class="hero-text">
@@ -670,8 +714,28 @@ if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){va
 document.querySelectorAll('.card').forEach(function(card){
   var out=card.querySelector('output'),btn=card.querySelector('.order-btn'),tot=card.querySelector('.total');
   var name=card.dataset.name,price=+card.dataset.price,q=1;
+  var media=card.querySelector('.media'),src=media.querySelector('img'),tiles=null,badge=null,url='',alt='';
+  if(src){
+    url=src.getAttribute('src');alt=src.alt;
+    tiles=document.createElement('div');tiles.className='tiles';
+    badge=document.createElement('span');badge.className='qbadge';badge.hidden=true;
+    src.replaceWith(tiles);media.appendChild(badge);media.classList.add('has-tiles');
+  }
+  function renderTiles(){
+    if(!tiles)return;
+    var n=Math.min(q,9);
+    tiles.dataset.n=n;
+    while(tiles.children.length>n)tiles.lastChild.remove();
+    while(tiles.children.length<n){
+      var t=document.createElement('span');t.className='tile'+(tiles.children.length?' new':'');
+      var im=document.createElement('img');im.src=url;im.alt=alt;
+      t.appendChild(im);tiles.appendChild(t);
+    }
+    badge.textContent='× '+q;badge.hidden=q<2;
+  }
   function update(){
     out.textContent=q;
+    renderTiles();
     var sum=q*price;
     tot.textContent=q+' × ₹'+price+' = ₹'+sum;
     var msg='Hi Ghee India, I want to order '+q+' × '+name+' (₹'+sum+').';
@@ -711,6 +775,16 @@ document.querySelectorAll('.copy').forEach(function(b){
     if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,done)}else{done()}
   });
 });
+// Soft glitter (few sparkles, slow twinkle)
+(function(){
+  var g=document.createElement('div');g.className='glitter';g.setAttribute('aria-hidden','true');
+  for(var i=0;i<16;i++){
+    var s=document.createElement('i');if(i%3===0)s.className='dot';
+    s.style.cssText='left:'+(Math.random()*100).toFixed(1)+'%;top:'+(Math.random()*100).toFixed(1)+'%;--s:'+(9+Math.random()*13).toFixed(0)+'px;--d:'+(6+Math.random()*5).toFixed(1)+'s;--l:-'+(Math.random()*9).toFixed(1)+'s';
+    g.appendChild(s);
+  }
+  document.body.insertBefore(g,document.body.firstChild);
+})();
 </script>
 
 </body>
